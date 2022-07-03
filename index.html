@@ -1,11 +1,46 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/main.css">
-    <title>Travel</title>
+    <title>Dream trip</title>
 </head>
 <body>
+    <section>
+        <header>
+            <a href="" class="logo">Travel</a>
+            <div class="toggle" onclick="toggleNav();"></div>
+        </header>
+        <div class="content">
+            <h2>Dream<br>Trip</h2>
+        </div>
+        <div class="play" onclick="toggleVideo()">
+            <img src="img/play.png" alt="Play"><span>Play video</span>
+        </div>
+        <ul class="social">
+            <li class="social__item"><a href="#" class="social__link"><img src="img/facebook.png" alt=""></a></li>
+            <li class="social__item"><a href="#" class="social__link"><img src="img/twitter.png" alt=""></a></li>
+            <li class="social__item"><a href="#" class="social__link"><img src="img/instagram.png" alt=""></a></li>
+        </ul>
+        <nav>
+            <ul class="menu">
+                <li class="menu__item"><a href="#" class="menu__link">Home</a></li>
+                <li class="menu__item"><a href="#" class="menu__link">About</a></li>
+                <li class="menu__item"><a href="#" class="menu__link">Booking</a></li>
+                <li class="menu__item"><a href="#" class="menu__link">Tour</a></li>
+                <li class="menu__item"><a href="#" class="menu__link">Blog</a></li>
+                <li class="menu__item"><a href="#" class="menu__link">Contact</a></li>
+            </ul>
+        </nav>
+    </section>
+    <div class="trailer">
+        <video src="video/clip.mp4" controls="true"></video>
+        <img src="img/close.png" alt="" class="close" onclick="toggleVideo();">
+    </div>
 
+    <script src="js/main.js"></script>
 </body>
 </html>
